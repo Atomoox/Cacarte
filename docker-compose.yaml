@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+  web_worker:
+    build: apache
+    container_name: web_worker
+    volumes:
+      - ./storage/xdebug:/tmp/
+    ports:
+      - 8080:80
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.1
+
+  database:
+    build: postgres
+    container_name: database
+    environment: 
+      - POSTGRES_PASSWORD=tp12023
+      - POSTGRES_USER=tp1
+      - POSTGRES_DB=sae
+    ports:
+      - 8081:5432
+    volumes:
+      - ./storage/postgres-data:/var/lib/postgresql/data
+      - ./storage/sql:/docker-entrypoint-initdb.d
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.2
+
+  pg_panel:
+    image: dpage/pgadmin4
+    container_name: pg_panel
+    environment:
+      - MAX_LOGIN_ATTEMPTS=100
+      - PGADMIN_DEFAULT_EMAIL=cacarte@admin.com
+      - PGADMIN_DEFAULT_PASSWORD=cacarte1234
+    ports:
+      - 8082:80 
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.3
+
+  path_api:
+    build: golang
+    container_name: path_api
+    ports:
+      - 8083:8080
+    networks:
+      static-network:
+        ipv4_address: 172.20.128.4
+
+networks:
+  static-network:
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

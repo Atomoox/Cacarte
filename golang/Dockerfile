@@ -2,8 +2,6 @@ FROM golang
 
 RUN apt-get update && apt-get install -y git
 
-COPY .netrc /root/.netrc
-
 WORKDIR /go/src/app
 
 RUN git clone https://github.com/Yuyugnat/sae-shortest-path-api.git .

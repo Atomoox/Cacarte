@@ -9,8 +9,6 @@ RUN mkdir -p /var/run/apache2/
 
 RUN apt-get install -y git
 
-COPY .netrc /root/.netrc
-
 WORKDIR /var/www/html/
 
 RUN git clone https://github.com/Atomoox/cacarte-php.git /var/www/html/

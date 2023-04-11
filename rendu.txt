@@ -1,0 +1,25 @@
+Anaïs ANDRE, Clément TRENS, Tanguy MACE et Dorian GRASSET
+
+Répartition du travail de la SAE S4
+
+Le travail a été répartie équitablement, tous les membres ont réalisé 25% de la SAE.
+
+Anaïs: Au cours de cette SAE, j’ai participé à la création des vues matérialisées et aux index pour l’optimisation de la BDD. J’ai aussi été une des 
+responsables de la recherche documentaire et de l’analyse de l’impact environnemental de notre application. J’ai eu l’occasion de participer au design 
+“mobile first” de notre interface. Ma grosse part du travail réside dans la rédaction du rapport et la réalisation du diaporama pour la présentation 
+orale de notre projet.  
+
+Clément: Lors de ce projet collaboratif, j’ai eu la responsabilité d'implémenter toutes les fonctionnalités au niveau de l’interface comme la carte 
+avec OpenMapView, ou encore le style css et certains composants ainsi que la responsivité de la page web. J’ai aussi mis en place une procédure docker 
+complète afin que le projet soit complètement déployé et lancé en une seule commande “docker compose up -d” dans une stack docker. En parallèle du 
+développement, j’ai aussi expérimenté la création de nos première vues et de certains index dans la quête d’un calcul plus rapide. 
+
+Tanguy: Dans le cadre de mes fonctions, j'ai assuré la mise en place de l'API utilisant l'algorithme A*, optimisé la base de données en ajoutant des 
+tables et des vues, ainsi que réalisé plusieurs tests pour notre application. En parallèle, j'ai procédé à plusieurs relevés de données tout au long 
+de la phase d'optimisation. En outre, j'ai également contribué à la rédaction d'une partie du rapport traitant de l'optimisation de la base de données 
+et de l'algorithme.
+
+Dorian : Au sein de ce projet, j'ai joué un rôle déterminant en contribuant à plusieurs aspects essentiels, notamment la création des tests, la mise 
+en place de l'API et la sélection du langage de programmation adéquat. De plus, j'ai participé activement à la conception de l'interface utilisateur 
+de l'application, ainsi qu'à la recherche et l'implémentation de l'algorithme A*. J'ai également assuré la préparation des diapositives pour la présentation 
+et rédigé le compte rendu final, qui a été une étape cruciale de notre travail.

@@ -13,7 +13,7 @@ COPY .netrc /root/.netrc
 
 WORKDIR /var/www/html/
 
-RUN git clone https://github.com/Atomoox/Cacarte.git /var/www/html/
+RUN git clone https://github.com/Atomoox/cacarte-php.git /var/www/html/
 
 RUN echo '<?php echo phpinfo();' > index.php
 RUN echo 'max_execution_time = 400' >> /usr/local/etc/php/conf.d/docker-php-maxexectime.ini;

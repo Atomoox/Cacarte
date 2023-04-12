@@ -56,6 +56,13 @@ CREATE TABLE utilisateur (
   nonce VARCHAR(255) NOT NULL
 );
 
+create table path_history (
+    user_id serial,
+    date timestamp,
+    data jsonb,
+    PRIMARY KEY (user_id, data)
+);
+
 COPY noeud_commune
 FROM '/var/data/noeud_commune.csv'
 DELIMITER ';'

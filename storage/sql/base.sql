@@ -57,10 +57,12 @@ CREATE TABLE utilisateur (
 );
 
 create table path_history (
-    user_id serial,
+    user_id varchar(255),
     date timestamp,
-    data jsonb,
-    PRIMARY KEY (user_id, data)
+    depart varchar(255),
+    arrivee varchar(255),
+    distance float,
+    PRIMARY KEY (user_id, date)
 );
 
 COPY noeud_commune
